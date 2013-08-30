@@ -5,6 +5,20 @@ Stored Routines for MariaDB, Percona Server and Oracle MySQL.
 They allow you to materialize the Diagnostics Area into a temporary table,
 or show it.
 
+Syntax:
+
+```
+_.materialize_diagnostics_area()
+Create and populate a _.DIAGNOSTICS_AREA temporary table.
+
+_.show_diagnostics_area()
+SHOW common information about error conditions.
+
+_.show_full_diagnostics_area()
+SHOW all information about error conditions,
+including the properties which can only be set via SIGNAL or RESIGNAL.
+```
+
 Usage example:
 
 ```
@@ -23,3 +37,6 @@ MariaDB [test]> CALL _.show_diagnostics_area();
 +----+----------+-------------+--------------------------------------------+
 4 rows in set (0.09 sec)
 ```
+
+More info:
+http://falseisnotnull.wordpress.com/2013/08/23/mariadbmysql-procedures-to-easily-access-the-diagnostics-area/
