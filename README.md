@@ -39,4 +39,5 @@ MariaDB [test]> CALL _.show_diagnostics_area();
 ```
 
 More info:
+
 http://falseisnotnull.wordpress.com/2013/08/23/mariadbmysql-procedures-to-easily-access-the-diagnostics-area/
